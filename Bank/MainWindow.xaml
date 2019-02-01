@@ -1,0 +1,21 @@
+﻿<Window x:Class="Bank.MainWindow"
+        
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bank"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="191.697" Width="266.357"
+        WindowStartupLocation="CenterScreen" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="33*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Авторизоваться" HorizontalAlignment="Center" Margin="43,35,-179,-25" VerticalAlignment="Center" Width="169" Grid.Column="1" Click="Button_Click"/>
+        <TextBox  x:Name="Login" HorizontalAlignment="Center" Height="23" Margin="43,-24,-179,33" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Center" Width="169" Grid.Column="1"   GotFocus="Login_GotFocus"  />
+        <TextBox x:Name="Password" HorizontalAlignment="Center" Height="23" Margin="43,-1,-179,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Center" Width="169" Grid.Column="1" RenderTransformOrigin="0.32,0.478"  GotFocus="Password_GotFocus" />
+
+    </Grid>
+</Window>
